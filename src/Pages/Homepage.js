@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../Picture/hun1.png"; // adjust path to your image
-import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import Image from "../Picture/new1.jpeg"; // adjust path to your image
+import { FaLinkedin, FaGithub, } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 function HomePage() {
@@ -113,7 +113,7 @@ function HomePage() {
           }}
         >
           <a
-            href="#graphics"
+            href="#projects"
             style={{
               padding: "16px 28px",
               background: "linear-gradient(to right, #F97316, #EA580C)",
@@ -199,7 +199,7 @@ function HomePage() {
           >
             <FaXTwitter />
           </a>
-          <a
+          {/* <a
             href="https://wa.me/256XXXXXXXXX"
             target="_blank"
             rel="noreferrer"
@@ -208,7 +208,7 @@ function HomePage() {
             onMouseLeave={(e) => (e.currentTarget.style.color = "#374151")}
           >
             <FaWhatsapp />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

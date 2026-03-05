@@ -5,11 +5,19 @@
 import React from "react";
 
 // ✅ Import images
-import contactImg from "../Picture/logo.jpg";
-import image5 from "../Picture/linkedin.png";
-import image6 from "../Picture/x.png";
+import contactImg from "../Picture/im1.jpg";
+import image5 from "../Picture/im3.jpg";
+import image6 from "../Picture/im2.jpg";
+import image15 from "../Picture/timeless.jpg";
+
 
 const projects = [
+  {
+    title: "Timeless Mining Company Website",
+    description: "Timeless is a mining company that is committed to providing high-quality minerals and metals to its customers while adhering to sustainable and responsible mining practices.",
+    link: "https://timelessmining.com/",
+    screenshot: image15,
+  },
   {
     title: "Portfolio Website",
     description: "A responsive React portfolio to showcasing skills and job centered ideas.",
@@ -19,7 +27,7 @@ const projects = [
   {
     title: "My personal portfolio",
     description: "Personale portfolio website showcasing my skills,projects and abilities",
-    link: "https://your-store-link.com",
+    link: "https://mariahbless.github.io/Myportfolio/#/",
     screenshot: image5,
   },
   {
@@ -38,8 +46,7 @@ export default function ProjectsPage() {
       <div style={{ textAlign: "center", marginBottom: "50px" }}>
         <h1 style={{ fontSize: "2.5rem", fontWeight: "700", color: "#02274d", marginBottom: "15px" }}>My Projects</h1>
         <p style={{ color: "#555", maxWidth: "700px", margin: "0 auto", lineHeight: "1.6" }}>
-          A selection of my work — each project reflects my learning, creativity, and problem-solving journey. Explore the projects to see my skills in action.
-        </p>
+          “This projects presents a curated selection of my work, each project representing not only the outcome but also the journey of learning, creativity, and problem-solving that shaped it. From concept to execution, these projects demonstrate my ability to adapt, innovate, and apply skills in practical, impactful ways. I invite you to explore them and gain insight into my growth, technical expertise, and creative process.” </p>
       </div>
 
       {/* Projects Grid */}
@@ -55,7 +62,7 @@ export default function ProjectsPage() {
             style={{
               background: "#fff",
               borderRadius: "20px",
-              width: "280px",
+              width: "300px",
               boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
               transition: "transform 0.3s, box-shadow 0.3s",
               display: "flex",
@@ -77,7 +84,7 @@ export default function ProjectsPage() {
             <img
               src={project.screenshot}
               alt={project.title}
-              style={{ width: "100%", height: "180px", objectFit: "cover" }}
+              style={{ width: "100%", height: "200px", objectFit: "cover" }}
             />
 
             {/* Content */}
@@ -95,7 +102,7 @@ export default function ProjectsPage() {
                 style={{
                   padding: "10px 15px",
                   backgroundColor: "#02274d",
-                  color: "#fff",
+                  color: "#f5f3f8ff",
                   borderRadius: "10px",
                   textDecoration: "none",
                   fontWeight: "600",
